@@ -1,0 +1,287 @@
+/********************************************
+GENERAL
+********************************************/
+body{
+	background-color:rgba(0,0,0,1);
+	color:rgba(255,255,255,1);
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Bungee', cursive;
+	color:#ceb252;
+}
+a{
+	color:#8b7427;
+	text-decoration: none;
+}
+a:hover{
+	color:#ceb252;
+	text-decoration: none;
+}
+
+/********************************************
+PARALLAX
+********************************************/
+#header_parallax {
+    background-image: url("/img/cinema-en-plein-air_3.jpg");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center -20px;
+    background-repeat: no-repeat;
+	position:relative;
+}
+#header_parallax_overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	background-color: #000;
+}
+#header_parallax_title{
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+/********************************************
+NAV BAR
+********************************************/
+#nav_bar_top.bg-dark{
+	background-color:#000 !important;
+}
+#nav_bar_top_menu{
+	padding-right:30px;
+}
+.logo_title{
+	padding-left:10px;
+	display:flex;
+	align-items:center;
+}
+.logo_img{
+	width:50px;
+	height:50px;
+}
+/* Override Bootstrap */
+.navbar-dark .navbar-brand,.navbar-dark .navbar-brand:hover{
+	color:#ceb252;
+	font-family: 'Bungee', cursive;
+	font-size: 11px;
+	display:flex !important; 
+}
+.navbar-dark .navbar-nav .nav-link {
+	color:#8b7427;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	color:#c7a638;
+}
+.navbar-dark .navbar-nav .active > .nav-link, 
+.navbar-dark .navbar-nav .active > .nav-link:hover {
+	color:#ddc988;
+}
+
+/********************************************
+SLIDER
+********************************************/
+#slide_post_content, #slide_post_content2{
+	margin:15px 0px;
+}
+.img_slide{
+	width:100%;
+	opacity:0.6;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.img_slide:hover{
+	opacity:1;
+	cursor:pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.csa_slide{
+	padding:7px;
+	position:absolute;
+	bottom:0%;
+}
+.csa_img{
+	height:30px;
+	width:30px;
+}
+.date_slide{
+	list-style: none;
+	position:absolute;
+	top:0%;
+	left:10%;
+	background-image:url("/img/pelicule2.jpg");
+	width:85px;
+	height:72px;
+	overflow:hidden;
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+}
+.date_slide_list {
+	list-style: none;
+	padding: 0px;
+	margin-top: 13px;
+	margin-left: 2px;
+	color: rgba(0,0,0,0.9);
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+}
+/*** Override Boostrap ***/
+.carousel-control-next, .carousel-control-prev {
+	width: 3%;
+	opacity: .7;
+}
+#slide_post_content2 .row{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+/********************************************
+BLOC principal
+********************************************/
+#bloc_principal{
+	margin-top:25px;
+}
+
+/****** PAGE ACCUEIL ******/
+#bloc_principal_2{
+	padding-left: 50px;
+}
+
+
+/****** PAGE NEWS LIST ******/
+#bloc_news_liste .card {
+	background-color: #141106;
+	border: 1px solid rgba(206,178,82,1);
+}
+.news_nav_btn, .news_row_photos, .news_row_infos, #bloc_news_liste .card {
+	margin-bottom:20px;
+}
+.news_img_link{
+	  position: relative;
+}
+.news_img_link:hover .overlay_news_img{
+  width: 100%;
+}
+.overlay_news_img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(206,178,82,0.4);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.overlay_news_text{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.news_title{
+	color:#8b7427;
+}
+.news_title:hover{
+	color:#ceb252;
+}
+
+/****** PAGE PLANNING ******/
+.img_planning{
+	max-height: 400px;
+}
+.img_planning_box{
+	display:flex; 
+	position:relative;
+}
+.film_list_btn{
+	list-style:none;
+}
+.bloc_liste_jour{
+	margin-top:20px;
+}
+
+	/* Override Boostrap */
+.btn-outline-warning:hover {
+	background-color: #ceb252;
+	border-color: #8b7427;
+	color:#212529;
+}
+.btn-outline-warning:active{
+	background-color:#ddc988;
+	color:#212529;
+}
+.btn-outline-warning {
+	border-color: #ceb252;
+	color: #ceb252;
+}
+
+/****** PAGE FILMS ******/
+.bande_annonce_dailymotion{
+	width:480px;
+	height:270px;
+	border:0;
+}
+
+/********************************************
+Sponsor BAR
+********************************************/
+#footer_sponsors{
+	position:relative;
+}
+#footer_sponsors_overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+	background-color: #ceb252;
+	Z-index:500;
+}
+.img_sponsor{
+	max-height:50px;
+	max-width:100px;
+}
+.img_sponsor_div h4{
+	margin-bottom:0px;
+}
+.img_sponsor_div{
+	/* margin-top:auto; */
+	/* margin-bottom:auto; */
+}
+.sponsor_title{ /* recrer le H5 pour ameliorer accessibilité */
+	font-family: 'Bungee', cursive;
+	color:#ceb252;
+	font-size:1.25rem;
+	margin-top: 0;
+	margin-bottom: .5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+/********************************************
+FOOTER
+********************************************/
+
+#bloc_footer{
+	margin-top:15px;
+	font-size:10px;
+}
+.footer_nav{
+	list-style:none;
+	display:flex;
+}
+.footer_nav_item{
+	margin:0px 5px;
+	font-size:12px;
+}
