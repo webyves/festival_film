@@ -6,8 +6,5 @@ ATTENTION CECI EST UN SITE DE DEMO FONCTIONNEL
 
 # Installation Notes 
 Cloner le repository sur votre serveur
-- dé-zipper le fichier vendor.zip a la racine de votre dossier.
-
-
 
 # Patch Notes
